@@ -1,0 +1,37 @@
+Todas las fotos al proyecto con un enlace - OK
+Incluir en portada alguna foto tuneada con GIMP - OK (Imagen principal editada para quitar grafiti)
+Web con fotos originales - OK
+Reproductor en la cabezera - OK
+Animaciones - OK (Seccion enlaces)
+Pluggin idiomas - OK
+
+
+Accesibilidad desde movil 
+Imagenes con texto alternativo
+Transformaciones - En proceso (Noticias)
+En el reproductor poner musica de fondo y descripcion hablada del centro.
+
+
+
+------------------
+
+
+
+Incluir todas las fotos al proyecto con un enlace
+Incluir en portada algunas fotos tuneadas con GIMP
+Intentas que la web tenga todas nuestras fotos originales
+En la cabecera incluir un minireproductor con música de fondo y una descripción Hablada del centro, el reproductor debe estar tuneado con la estética de la página
+Animaciones jquery
+Cabecera animada con google web designer
+Incluir transiciones
+Incluir transformaciones
+Plugin idiomas
+Página accesible desde móvil y tablets
+Todas las imágenes con texto alternativo
+Video de fondo en la web
+Icono de validación de HTML y CSS
+
+_______________________PRESENTACION_______________________
+
+Elaborar un documento en el que se explique brevemente cada parte del proyecto.
+Recomendable una presentación en powerpoint o una herramienta similar.

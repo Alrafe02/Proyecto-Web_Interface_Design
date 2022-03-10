@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>IES Mar de Cádiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Links -->
+    <link
+      href="./css/style-PagPrincipal.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/divs.css" />
+    <link rel="stylesheet" href="./css/animaciones.css" />
+    <!-- Libreria animaciones-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="https://i.ibb.co/q0cxLjz/icono-Grande.jpg" />
+  </head>
+
+  <body>
+    <!-- Barra lateral-->
+    <div>
+      <div class="sidebar close">
+        <ul class="nav-links">
+          <li>
+            <div class="home-content">
+              <div class="botonMenu">
+                <i class="bx bx-menu"></i>
+              </div>
+            </div>
+          </li>
+
+          <li class="iconico">
+            <a
+              href="https://educacionadistancia.juntadeandalucia.es/centros/cadiz/"
+            >
+              <img
+                src="https://i.ibb.co/qgf2HzM/moodle.png"
+                class="iconosNav"
+                alt="Icono Moodle"
+              />
+              <span class="link_name">Moodle</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li>
+                <a
+                  class="link_name"
+                  href="https://educacionadistancia.juntadeandalucia.es/centros/cadiz/"
+                  >Moodle</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="iconico">
+            <div class="iocn-link">
+              <a href="#">
+                <img
+                  src="https://i.ibb.co/Cz1RRmL/Noticias.png"
+                  class="iconosNav"
+                  alt="Icono Noticias"
+                />
+                <span class="link_name">Noticias</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">Noticias</a></li>
+            </ul>
+          </li>
+
+          <li class="iconico">
+            <div class="iocn-link">
+              <a href="#">
+                <img
+                  src="https://i.ibb.co/SDSRJNs/Sobre-Nosotros.png"
+                  class="iconosNav"
+                  alt="Icono Sobre Nosotros"
+                />
+                <span class="link_name">Sobre Nosotros</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">Sobre Nosotros</a></li>
+            </ul>
+          </li>
+
+          <li class="iconico">
+            <a href="#">
+              <img
+                src="https://i.ibb.co/vB1NQ0N/AMPA.png"
+                class="iconosNav"
+                alt="Icono Ampa"
+              />
+              <span class="link_name">Ampa</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Ampa</a></li>
+            </ul>
+          </li>
+
+          <li class="iconico">
+            <a href="#">
+              <img
+                src="https://i.ibb.co/PDwKq4c/biblioteca-en-linea.png"
+                class="iconosNav"
+                alt="Icono Biblioteca"
+              />
+              <span class="link_name">Biblioteca</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Biblioteca</a></li>
+            </ul>
+          </li>
+
+          <li class="iconico">
+            <div class="iocn-link">
+              <a href="#">
+                <img
+                  src="https://i.ibb.co/Hp5Gqcc/impresora.png"
+                  class="iconosNav"
+                  alt="Icono Impresora"
+                />
+                <span class="link_name">Impresiones</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">Impresiones</a></li>
+            </ul>
+          </li>
+
+          <li class="iconico">
+            <a href="#">
+              <img
+                src="https://i.ibb.co/8M3SJkY/jardines.png"
+                class="iconosNav"
+                alt="Icono jardines"
+              />
+              <span class="link_name">Jardines</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Jardines</a></li>
+            </ul>
+          </li>
+
+          <li class="iconico">
+            <a href="#">
+              <img
+                src="https://i.ibb.co/xXFPVSc/empleo.png"
+                class="iconosNav"
+                alt="Icono Empleo"
+              />
+              <span class="link_name">Portal Empleo</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Portal De Empleo</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+          arrow[i].addEventListener("click", (e) => {
+            let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+            arrowParent.classList.toggle("showMenu");
+          });
+        }
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-menu");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+          sidebar.classList.toggle("close");
+        });
+      </script>
+    </div>
+
+    <!-- Header -->
+    <div id="divHeader">
+      <div class="contenedorHeader">
+        <img
+          class="img"
+          id="fondo"
+          src="https://i.ibb.co/dL7940N/foto-Insti.jpg"
+          alt="foto-Insti"
+        />
+      </div>
+      <!--<svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#36416B" fill-opacity="1" d="M0,192L60,213.3C120,235,240,277,360,250.7C480,224,600,128,720,85.3C840,43,960,53,1080,64C1200,75,1320,85,1380,90.7L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+          
+        -->
+
+      <div class="colorHeader">
+        <div class="iconosHeader">
+          <div class="idioma">
+            <div id="google_translate_element"></div>
+            <script>
+              function googleTranslateElementInit() {
+                new google.translate.TranslateElement(
+                  {
+                    pageLanguage: "es",
+                    layout:
+                      google.translate.TranslateElement.InlineLayout.SIMPLE,
+                    autoDisplay: false,
+                    includedLanguages: "",
+                  },
+                  "google_translate_element"
+                );
+              }
+            </script>
+            <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+          </div>
+        </div>
+        <!--
+              <div class="logo-details">
+                  <a href="./index.html"><img src="images/iconopaloma.png" style="width:65px; height:60px; margin-left: 9px; margin-top: 25px; border-radius: 15px;"></a>
+                <span class="logo_name" onclick="location.href='./index.html'"style="cursor: pointer; padding-left: 15px; padding-top: 25px; align-self: center; ">  Mar de Cádiz</span>
+              </div>
+            -->
+        <div class="tituloPrincipal">MAR DE CÁDIZ <br /></div>
+        <div class="audioHeaderContainer">
+          <audio
+            src="audio/cancion.mp3"
+            controls="controls"
+            class="audioHeader"
+          ></audio>
+        </div>
+      </div>
+      <div class="logoHeaderContainer">
+        <img
+          class="imagenIcono"
+          src="https://i.ibb.co/QKs3C73/iconopaloma.png"
+          alt="Logo Mar de Cadiz"
+        />
+      </div>
+    </div>
+
+    <!-- Enlaces -->
+    <div id="divEnlaces">
+      <h2 id="h2Enlaces">Enlaces de Interes</h2>
+      <div class="enlaces">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="btn-acceso-rapido enlace1"
+          onclick="location.href='https://educacionadistancia.juntadeandalucia.es/centros/cadiz/'"
+          style="cursor: pointer"
+        >
+          Moodle <br />
+          <img
+            class="img"
+            src="https://i.ibb.co/qgf2HzM/moodle.png"
+            alt="Icono Moodle"
+          />
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="500"
+          class="btn-acceso-rapido enlace2"
+          onclick="location.href='#noticias'"
+          style="cursor: pointer"
+        >
+          Noticias <br />
+          <img
+            class="img"
+            src="https://i.ibb.co/Cz1RRmL/Noticias.png"
+            alt="Icono Noticias"
+          />
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="800"
+          class="btn-acceso-rapido enlace3"
+          onclick="location.href='#aboutUs'"
+          style="cursor: pointer"
+        >
+          Sobre Nosotros <br />
+          <img
+            class="img"
+            src="https://i.ibb.co/SDSRJNs/Sobre-Nosotros.png"
+            alt="Icono Sobre Nosotros"
+          />
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="1100"
+          class="btn-acceso-rapido enlace3"
+          onclick="location.href='#aboutUs'"
+          style="cursor: pointer"
+        >
+          Recursos Extras <br />
+          <img
+            class="img"
+            src="https://i.ibb.co/cFWK0tZ/avatar.png"
+            alt="Icono Recursos Extras"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Noticias -->
+    <div id="divNoticias">
+      <h2 id="h2Enlaces">Noticias Destacadas</h2>
+      <div class="contenidoNoticias">
+        <div
+          class="contenido scrollbar grow btn-abrir-popup"
+          id="btn-abrir-popup"
+        >
+          <p class="tituloNoticia">Titulo 2</p>
+          <br />
+          Lorem fistrum de la pradera te voy a borrar el cerito qué dise usteer.
+          Mamaar ese pedazo de a peich a peich amatomaa se calle ustée qué dise
+          usteer quietooor. Torpedo de la pradera ese hombree ese hombree
+          apetecan apetecan no putrigo por no llamarte Rodrigor sexuarl a wan.
+          Ese hombre.
+        </div>
+        <!--  PopUp -->
+        <div class="overlay" id="overlay">
+          <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">X</a>
+            <h3>NOTICIA 1</h3>
+            <div class="contenedor-inputs">
+              <p>
+                Este es un ejemplo de noticia, la cual hablaa de cuanto odio a
+                Daniel Martinez Bravo
+              </p>
+            </div>
+          </div>
+          <script src="./js/popUp.js"></script>
+        </div>
+        <!--  Cierre PopUp  -->
+        <div class="contenido scrollbar">
+          <p class="tituloNoticia">Titulo 2</p>
+          <br />
+          Lorem fistrum de la pradera te voy a borrar el cerito qué dise usteer.
+          Mamaar ese pedazo de a peich a peich amatomaa se calle ustée qué dise
+          usteer quietooor. Torpedo de la pradera ese hombree ese hombree
+          apetecan apetecan no puedor hasta luego Lucas no te digo trigo por no
+          llamarte Rodrigor sexuarl a wan.
+        </div>
+        <div class="contenido scrollbar">
+          <p class="tituloNoticia">Titulo 2</p>
+          <br />
+          Lorem fistrum de la pradera te voy a borrar el cerito qué dise usteer.
+          Mamaar ese pedazo de a peich a peich amatomaa se calle ustée qué dise
+          usteer quietooor. Torpedo de la pradera ese hombree ese hombree
+          apetecan apetecan no puedor hasta luego Lucas no te digo trigo por no
+          llamarte Rodrigor
+        </div>
+      </div>
+    </div>
+
+    <!-- Oferta Educativa -->
+    <div id="divOfertaEducativa">
+      <div class="text-center">
+        <h2 class="tituloFormulario">Oferta Educativa</h2>
+        <p>Proximamente...</p>
+      </div>
+    </div>
+
+    <!-- Formulario -->
+    <div id="divFormulario">
+      <div class="text-center">
+        <h2 class="tituloFormulario">Formulario de Contacto</h2>
+        <p style="margin-left: 72px">
+          Rellene este formulario para ponerse en contacto con el centro, en
+          cuanto uno de nuestro personal esté disponible le contactará de
+          inmediato
+        </p>
+      </div>
+      <form action="#" class="justify-content-center">
+        <div class="inputsFormulario">
+          <input type="text" placeholder="Nombre" class="form1" />
+          <input type="email" placeholder="E-mail" class="form2" />
+          <input type="text" placeholder="Telefono" class="form3" />
+        </div>
+        <div class="botonFormulario">
+          <button>Enviar</button>
+        </div>
+      </form>
+    </div>
+    <!--Footer
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="black" fill-opacity="1" d="M0,256L60,224C120,192,240,128,360,112C480,96,600,128,720,122.7C840,117,960,75,1080,48C1200,21,1320,11,1380,5.3L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+-->
+    <div class="footer">
+      <div class="footer-banner">
+        <img
+          src="https://i.ibb.co/mqb2gdL/gobierno-banner.png"
+          class="bannerGobierno"
+          alt="Banner Gobierno"
+        />
+      </div>
+      <div class="footer-contenido">
+        <span class="textoFooter"
+          >IES Mar de Cádiz. Avenida de Rafael Alberti s/n. El Puerto de Santa
+          María. Tfn:956243128<br />
+          <a href="https://seneca.juntadeandalucia.es/seneca/jsp/portal/"
+            >Seneca</a
+          >
+          |
+          <a href="https://www.juntadeandalucia.es/educacion/pasen/">Pasen</a> |
+          <a href="http://www.juntadeandalucia.es/">Junta de Andalucia</a> |
+          <a href="http://www.juntadeandalucia.es/educacion/"
+            >Consejería de Educación</a
+          >
+          |
+          <a
+            href="http://www.juntadeandalucia.es/educacion/webportal/web/delegacion-cadiz/la-delegacion"
+            >Delegación de Cádiz</a
+          ></span
+        >
+      </div>
+      <div class="footer-logo">
+        <img
+          src="https://i.ibb.co/SdKpjFc/junta-andalucia-logo.png"
+          class="logoJunta"
+          alt="Logo Junta de Andalucia"
+        />
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
