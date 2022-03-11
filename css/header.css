@@ -100,6 +100,11 @@ audio {
   margin-left: 90px;
   margin-top: 180px;
 }
+@media (max-width: 1500px) {
+  .imagenIcono {
+    margin-left: 20px;
+  }
+}
 
 @media (max-width: 1200px) {
   .video {
