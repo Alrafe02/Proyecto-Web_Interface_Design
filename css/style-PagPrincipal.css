@@ -130,7 +130,7 @@ body {
 }
 .inputsFormulario {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   margin-left: 78px;
   margin-top: 30px;
@@ -287,9 +287,6 @@ body {
 }
 /*---------------------------------CSS Aplicado a ventanas reducidas------------------------------------- */
 
-@media (max-width: 1500px) {
-}
-
 @media (max-width: 1000px) {
   .enlaces {
     display: flex;
@@ -350,5 +347,61 @@ body {
     width: 65px;
     height: 65px;
     margin-bottom: 200px;
+  }
+  .contenidoOferta {
+    border-radius: 30px;
+    border-color: black;
+    border-style: solid;
+    padding: 20px;
+    background-color: whitesmoke;
+    margin-left: 80px;
+    width: 85%;
+    height: 41vh;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+  }
+  .textoOferta {
+    word-wrap: break-word;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5em;
+    margin-left: 320px;
+  }
+  .imagenOferta {
+    overflow: hidden;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -45%;
+    max-width: 42%;
+    max-height: 30vh;
+    border-radius: 7%;
+  }
+}
+@media (max-width: 770px) {
+  .contenidoOferta {
+    border-radius: 30px;
+    border-color: black;
+    border-style: solid;
+    padding: 20px;
+    background-color: whitesmoke;
+    margin-left: 70px;
+    width: 85%;
+    height: 41vh;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+  }
+  .textoOferta {
+    word-wrap: break-word;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5em;
+    margin-left: 20px;
+  }
+  .imagenOferta {
+    display: none;
   }
 }
