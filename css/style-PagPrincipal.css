@@ -173,6 +173,36 @@ body {
   word-wrap: break-word;
   overflow-y: scroll;
 }
+.contenidoOferta {
+  border-radius: 30px;
+  border-color: black;
+  border-style: solid;
+  padding: 20px;
+  background-color: whitesmoke;
+  margin-left: 110px;
+  width: 90%;
+  height: 30vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.textoOferta {
+  word-wrap: break-word;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5em;
+  margin-left: 400px;
+}
+.imagenOferta {
+  overflow: hidden;
+  position: absolute;
+  margin-top: -18px;
+  margin-left: -65%;
+  max-width: 90%;
+  max-height: 29vh;
+  border-radius: 7%;
+}
 /*--------Scrollbar de Noticias----------*/
 .scrollbar::-webkit-scrollbar {
   width: 9px;
@@ -256,6 +286,9 @@ body {
     no-repeat black;
 }
 /*---------------------------------CSS Aplicado a ventanas reducidas------------------------------------- */
+
+@media (max-width: 1500px) {
+}
 
 @media (max-width: 1000px) {
   .enlaces {
