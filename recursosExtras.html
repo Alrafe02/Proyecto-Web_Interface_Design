@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/recursosExtras.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Recursos Extras</title>
+</head>
+<div class="text-center">
+<body>
+    <br>
+    <h1>SVG</h1>
+    <br>
+    <svg width="450" height="450">
+        <rect width="450" height="450" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+        <circle cx="225" cy="225" r="218" stroke="green" stroke-width="4" fill="yellow" />
+        <line x1="0" y1="0" x2="450" y2="450" style="stroke:rgb(255,0,0);stroke-width:2" />
+        <line x1="450" y1="0" x2="0" y2="450" style="stroke:rgb(255, 0, 0);stroke-width:2" />
+    </svg>
+    <br><br>
+    <h1>Logo Personalizado</h1>
+    <br><br>
+    <img height="30%" width="30%" src="images/logo.png">
+    <br>
+    <h1>Imagen Recursiva</h1>
+    <style>
+        img {display: block; margin: 0 auto;}
+      </style>
+      
+      <picture>
+        <source
+          media="(min-width: 650px)"
+          srcset="images/gato1.png">
+        <source
+          media="(min-width: 465px)"
+          srcset="images/gato2.png">
+        <img
+          src="images/gato3.png"
+          alt="a cute kitten">
+      </picture>
+      <br><br>
+      <h1>Filtros</h1>
+      <br><br>
+    <div style="display: flex;" class="text-center">
+      <img  width="250px" src="images/nelly.jpg" >
+      <img  width="250px" src="images/nelly.jpg" style="Filter:grayscale(100%)">
+      <img  width="250px" src="images/nelly.jpg" style="filter: blur(3px);">
+      
+    </div>
+    <br>
+    <div style="display: flex;">
+      <img  width="250px" src="images/nelly.jpg" style="filter:opacity(25%)">
+      <img  width="250px" src="images/nelly.jpg" style="filter:brightness(150%)" >
+      <img  width="250px" src="images/nelly.jpg" style="filter:contrast(200%)">
+      
+      
+    </div>
+    <br>
+    <div style="display: flex;">
+        <img  width="250px" src="images/nelly.jpg" style="filter:saturate(400%)">
+        <img  width="250px" src="images/nelly.jpg" style="filter:invert(100%)">
+        <img  width="250px" src="images/nelly.jpg" style="filter: grayscale(100%)  blur(3px)">
+        
+    </div>
+    <br>
+    <div style="display: flex;">
+        <img  width="250px" src="images/nelly.jpg" style="filter:sepia(100%)">
+        <img  width="250px" src="images/nelly.jpg" style="filter:hue-rotate(90deg)">
+        <img  width="250px" src="images/nelly.jpg" style="filter:drop-shadow(6px 6px 10px rgb(0, 0, 0))" >
+    </div>
+    <br>
+    <h1>Transiciones</h1>
+    <br>
+<div style="display: flex; justify-content: center">
+    <div class="containerTransicion">
+        <div class="fade-in"></div>
+    </div>
+    <div class="wrapper">
+        <button class="accelerated box"></button>
+        <button class="janky box"></button>
+    </div>
+    <div>
+        <button class="btn">
+        Hello World
+        </button>
+    </div>
+</div>
+    <br><br>
+
+    <h1>Transformaciones</h1>
+    <br>
+    <div style="display: flex; justify-content: center">
+      <div class="caja1 transformaciones">1</div>
+      <div class="caja2 transformaciones">2</div>
+      <div class="caja3 transformaciones">3</div>
+      <div class="caja4 transformaciones">4</div>
+      <div class="caja5 transformaciones">5</div>
+    </div>
+
+    <div style="display: flex; justify-content: center">
+      <div class="caja6 transformaciones">6</div>
+      <div class="caja7 transformaciones">7</div>
+      <div class="caja8 transformaciones">8</div>
+      <div class="caja9 transformaciones">9</div>
+      <div class="caja10 transformaciones">10</div>
+    </div>
+
+    <br>
+    <h1>Animacion JQuery</h1>
+    <br>
+    <script src="/lib/jquery-1.12.2.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#jq").animate({left: '1000px'}, "slow");
+        $("#jq").animate({height: '200px', opacity: '0.8'}, "slow");
+        $("#jq").animate({width: '200px', opacity: '0.4'}, "slow");
+        $("#jq").animate({left: '-1000px'}, "slow");
+    });
+});
+</script> 
+    <button>Start Animation</button>
+    <div id="jq" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+</div>
+
+</body>
+</html>
